@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Information Search</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Car Information</h1>
+    </header>
+
+    <div class="container">
+        <div class="search-bar">
+            <h2>Search Your Dream Car</h2>
+            <form id="searchForm" action="Main1.html" method="GET" onsubmit="showLoading()">
+                <input type="text" id="carInput" placeholder="Enter car Brand..." required autocomplete="off">
+                <button type="submit">Search</button>
+                <button type="button" onclick="resetSearch()">Reset</button>
+            </form>
+            <div id="suggestions" class="suggestions"></div>
+        </div>
+        
+        <!-- Catalog Section -->
+        <div class="catalog">
+            <h3>Our Car Catalog</h3>
+            <div class="car-list">
+                <div class="car-item">
+                    <img src="img2.png" alt="Car 1">
+                    <h4>BMW X7</h4>
+                    <p>Luxury Car</p>
+                </div>
+                <div class="car-item">
+                    <img src="55.JPG" alt="Car 2">
+                    <h4>LAMBORGHINI</h4>
+                    <p>FASTEST CAR</p>
+                </div>
+                <div class="car-item">
+                    <img src="img5.png" alt="Car 3">
+                    <h4>RANGE ROVER SV</h4>
+                    <p>OFF Road Car</p>
+                </div>
+                  <div class="car-item">
+                    <img src="img1.png" alt="Car 3">
+                    <h4>ROLLS ROYCE PHANTOM</h4>
+                    <p>MOST EXPANCIVE CAR</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="loading" class="loading" style="display: none;">Loading...</div>
+
+    <script>
+        // Placeholder for showLoading and resetSearch functions
+        function showLoading() {
+            document.getElementById('loading').style.display = 'block';
+        }
+
+        function resetSearch() {
+            document.getElementById('carInput').value = '';
+        }
+    </script>
+</body>
+</html>

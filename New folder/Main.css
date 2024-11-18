@@ -1,0 +1,140 @@
+/* Main.css */
+
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; 
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a1a; /* Dark, luxurious black */
+    color: #d4af37; /* Rich gold for luxury */
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 32px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.search-bar {
+    background-color: #333; /* Dark background for sophistication */
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.search-bar h2 {
+    margin: 0 0 15px 0;
+    font-size: 26px;
+    color: #d4af37; /* Gold text */
+}
+
+.search-bar input {
+    width: 70%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1a1a1a; /* Matching dark background */
+    color: #fff;
+}
+
+.search-bar button {
+    padding: 12px 18px;
+    background-color: #d4af37; /* Gold button for luxury */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.search-bar button[type="button"] {
+    background-color: #8b0000; /* Dark red button for reset */
+}
+
+.search-bar button:hover {
+    opacity: 0.85;
+}
+
+.catalog {
+    background-color: #1a1a1a; /* Dark background */
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: #fff;
+}
+
+.catalog h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #d4af37; /* Gold for headers */
+}
+
+.car-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.car-item {
+    width: 30%;
+    background-color: #292929; /* Slightly lighter dark background */
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.car-item:hover {
+    transform: translateY(-10px); /* Slight lift effect for hover */
+}
+
+.car-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.car-item h4 {
+    font-size: 22px;
+    margin: 15px 0;
+    color: #d4af37; /* Gold for car titles */
+}
+
+.car-item p {
+    font-size: 14px;
+    color: #bbb; /* Lighter color for description text */
+}
+
+.loading {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+    color: #d4af37; /* Gold loading text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .car-list {
+        flex-direction: column;
+    }
+
+    .car-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
